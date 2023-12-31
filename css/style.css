@@ -1,0 +1,173 @@
+.hidden {
+    display: none;
+}
+
+/* 드래그 금지--------------------------------------------------------------- */
+body{
+    user-select:none
+}
+
+/* 배경화면 관련 CSS--------------------------------------------------------- */
+img{
+    width: 100vw; /*브라우저 창의 너비에 맟춤*/
+    height: 100vh; /*브라우저 창의 높이에 맟춤*/
+    position: absolute; /*절대위치로 지정해 겹치게 해줌*/
+    top: 0px;
+    left: 0px;
+    z-index: -1; /*이미지 쌓임 순서를 다른 것들보다 뒤에 놓도록 -1로 함*/
+    opacity: 0.8; /*조금 투명하게 해줌*/
+}
+
+/* clock 관련 CSS----------------------------------------------------------- */
+#clock{
+    display: block;
+    font-size: 160px;
+    color: rgb(122, 122, 122);
+    margin-top: 180px;
+    letter-spacing: -10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 로그인창 관련 CSS--------------------------------------------------------- */
+#login-form{
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+#name{
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    padding-bottom: 0px;
+}
+
+#name::placeholder{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type="text"]{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    outline: none;
+}
+
+/* Go 버튼 관련 CSS---------------------------------------------------------- */
+#button{
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+}
+
+#button:hover{
+    color: gray;
+}
+
+/* Greeting 관련 CSS--------------------------------------------------------- */
+#greeting{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+/* todo 입력 관련 CSS--------------------------------------------------------- */
+#todo-form{
+    text-align: center;
+}
+
+#todoo{
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    width: 200px;
+    height: 40px;
+    padding-bottom: 0px;
+}
+
+#todoo::placeholder{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* todo 리스트 관련 CSS------------------------------------------------------ */
+li{
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover{
+    color: gray;
+}
+
+/* 명언 관련 CSS------------------------------------------------------------- */
+#quote{
+    bottom: 0px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+}
+
+#quote2{
+    font-size: 15px;
+}
+
+/* 날씨 관련 CSS------------------------------------------------------------- */
+#weather{
+    color: white;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#location{
+    font-size: 12px;
+}
+
+/* 검색 창 관련 CSS---------------------------------------------------------- */
+.search{
+    margin-left: 15px;
+}
+
+#search{
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    width: 150px;
+    height: 20px;
+    padding-bottom: 0px;
+}
+
+#search::placeholder{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+#search[type="text"]{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    outline: none;
+}
