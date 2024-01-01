@@ -1,4 +1,4 @@
-const images = ["0.jpg", "1.jpg", "2.jpg"];
+const images = ["0.jpg", "1.jpg", "2.jpg", "3.jpg"];
 
 // 0~1의 난수 * 이미지 개수(3) => 0 < x < 3의 난수
 // Math.floor을 통해 내림 => 0, 1, 2중 하나
