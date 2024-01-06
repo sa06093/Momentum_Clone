@@ -18,7 +18,6 @@ function restorePlaceholderName(element) {
 }
 
 function restorePlaceholderSearch(element) {
-    element.value = "";
     if (element.value === "") {
         element.setAttribute("placeholder", "Type your search term");
     }
