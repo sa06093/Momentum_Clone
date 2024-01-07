@@ -13,7 +13,7 @@
             type="text"
             placeholder="Type your search term"
             onfocus="hidePlaceholder(this)"
-            onblur="restorePlaceholderSearch(this)"
+            onblur="restorePlaceholder(this)"
             onkeydown="handleEnter(event)"
             />
             <button id="searchbutton" onclick="performSearch()">⌕</button>
@@ -30,7 +30,7 @@
                 type="text"
                 placeholder="What is your name?"
                 onfocus="hidePlaceholder(this)"
-                onblur="restorePlaceholderName(this)"
+                onblur="restorePlaceholder(this)"
             />
             <input type="submit" value="Go" id="button"/>
         </form>
@@ -45,7 +45,7 @@
                 type="text"
                 placeholder="Write a To Do"
                 onfocus="hidePlaceholder(this)"
-                onblur="restorePlaceholderTodo(this)"
+                onblur="restorePlaceholder(this)"
             />
         </form>
         
