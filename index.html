@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Momentum App</title>
+    </head>
+    <body>
+        <!-- 구글 검색엔진 추가 -->
+        <div class="search">
+            <input id="search"
+            type="text"
+            placeholder="Type your search term"
+            onfocus="hidePlaceholder(this)"
+            onblur="restorePlaceholder(this)"
+            onkeydown="handleEnter(event)"
+            />
+            <button id="searchbutton" onclick="performSearch()">⌕</button>
+        </div>
+
+        <!-- 여기서는 clock 만듦 -->
+        <div id="clock">00:00</div>
+
+        <!-- 여기서는 form 만듦 -->
+        <form id="login-form" class="hidden">
+            <input id="name"
+                required 
+                maxlength="15"
+                type="text"
+                placeholder="What is your name?"
+                onfocus="hidePlaceholder(this)"
+                onblur="restorePlaceholder(this)"
+            />
+            <input type="submit" value="Go" id="button"/>
+        </form>
+        
+        <!-- greeting 표현 -->
+        <h1 id="greeting" class="hidden"></h1>
+
+        <!-- todo-List 입력창 -->
+        <form id="todo-form">
+            <input id="todoo"
+                required
+                type="text"
+                placeholder="Write a To Do"
+                onfocus="hidePlaceholder(this)"
+                onblur="restorePlaceholder(this)"
+            />
+        </form>
+        
+        <!-- todo-List 표현 -->
+        <ul id="todo-list"></ul>
+
+        <!-- 명언들 표현 -->
+        <div id="quote">
+            <span id="quote1"></span><br>
+            <span id="quote2"></span>
+        </div>
+
+        <!-- 날씨 표현 -->
+        <div id="weather">
+            <span id="temp"></span><br>
+            <span id="location"></span>
+        </div>
+
+        <!-- js파일들 가져오기 -->
+        <script src="js/search.js"></script>
+        <script src="js/placeholder.js"></script>
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
